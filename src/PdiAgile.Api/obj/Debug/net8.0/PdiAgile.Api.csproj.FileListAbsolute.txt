@@ -6,6 +6,7 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/PdiAgile.Api.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/PdiAgile.Api.pdb
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -16,6 +17,7 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.csproj.CoreCompileInputs.cache
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.MvcApplicationPartsAssemblyInfo.cache
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.sourcelink.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/staticwebassets.build.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/staticwebassets.development.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/staticwebassets/msbuild.PdiAgile.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -30,4 +32,3 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.pdb
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/PdiAgile.Api.genruntimeconfig.cache
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/obj/Debug/net8.0/ref/PdiAgile.Api.dll
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/src/PdiAgile.Api/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll

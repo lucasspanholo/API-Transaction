@@ -1,10 +1,4 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/.msCoverageSourceRootsMapping_PdiAgile.Api.Tests
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.csproj.AssemblyReference.cache
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/MvcTestingAppManifest.json
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.GeneratedMSBuildEditorConfig.editorconfig
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.AssemblyInfoInputs.cache
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.AssemblyInfo.cs
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.csproj.CoreCompileInputs.cache
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/PdiAgile.Api.deps.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/PdiAgile.Api.runtimeconfig.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/appsettings.Development.json
@@ -333,6 +327,7 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/testhost.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -407,10 +402,16 @@
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/PdiAgile.Api.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/PdiAgile.Api.pdb
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.csproj.AssemblyReference.cache
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/MvcTestingAppManifest.json
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.AssemblyInfoInputs.cache
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.AssemblyInfo.cs
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.csproj.CoreCompileInputs.cache
+/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.sourcelink.json
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.E9DB1693.Up2Date
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/refint/PdiAgile.Api.Tests.dll
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.pdb
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/PdiAgile.Api.Tests.genruntimeconfig.cache
 /Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/obj/Debug/net8.0/ref/PdiAgile.Api.Tests.dll
-/Users/lucas/Desktop/projetos-pessoais/pdi-agile/tests/PdiAgile.Api.Tests/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll

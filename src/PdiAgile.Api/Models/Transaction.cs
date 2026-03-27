@@ -2,6 +2,6 @@ namespace PdiAgile.Api.Models;
 
 public class Transaction
 {
-    public decimal valor { get; set; }
-    public DateTimeOffset dataHora { get; set; }
+    public decimal Value { get; set; }
+    public DateTimeOffset DateTime { get; set; }
 }

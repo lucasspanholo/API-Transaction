@@ -1,12 +1,15 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
-namespace PdiAgile.Api.Models;
+namespace PdiAgile.Api.Requests;
 
 public class TransactionRequest
 {
     [Required]
-    public decimal? valor { get; set; }
+    [JsonPropertyName("valor")]
+    public decimal? Value { get; set; }
 
     [Required]
-    public DateTimeOffset? dataHora { get; set; }
+    [JsonPropertyName("dataHora")]
+    public DateTimeOffset? DateTime { get; set; }
 }
