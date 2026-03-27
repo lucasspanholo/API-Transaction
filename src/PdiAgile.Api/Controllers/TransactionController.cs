@@ -43,4 +43,12 @@ public class TransactionController : ControllerBase
         _logger.LogInformation("Accepted transaction: value={Value} dateTime={DateTime}", request.Value.Value, request.DateTime.Value);
         return StatusCode(StatusCodes.Status201Created);
     }
+
+    [HttpDelete]
+    [SwaggerResponse(StatusCodes.Status200OK, "Transação removida")]
+        public IActionResult DeleteTransaction()
+        {
+            TransactionStore.Store.Clear();
+            return Ok();
+        }
 }

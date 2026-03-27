@@ -86,6 +86,17 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
         Assert.Equal(HttpStatusCode.UnsupportedMediaType, response.StatusCode);
     }
 
+    [Fact]
+    public async Task DeleteTransacao_DeveRetornar200_SemCorpo_QuandoValida()
+    {
+        Clear(TransactionStore.Store);
+        var client = _factory.CreateClient();
+        var response = await client.DeleteAsync("/transacao");
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        var body = await response.Content.ReadAsStringAsync();
+        Assert.True(string.IsNullOrEmpty(body));
+    }
+
     private static void Clear(System.Collections.Concurrent.ConcurrentBag<Transaction> bag)
     {
         while (bag.TryTake(out _))
