@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PdiAgile.Application/1.0.0": {
+        "dependencies": {
+          "PdiAgile.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PdiAgile.Application.dll": {}
+        }
+      },
+      "PdiAgile.Domain/1.0.0": {
+        "runtime": {
+          "PdiAgile.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PdiAgile.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PdiAgile.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{91D251C6-9440-4AD2-AC49-A7FCD9981F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdiAgile.Api", "src\PdiAgile.Api\PdiAgile.Api.csproj", "{714B7BFE-C07E-4F86-9BAA-29D169966B7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{918A81A2-F4EA-470C-8B18-21643875E4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdiAgile.Api.Tests", "tests\PdiAgile.Api.Tests\PdiAgile.Api.Tests.csproj", "{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{714B7BFE-C07E-4F86-9BAA-29D169966B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714B7BFE-C07E-4F86-9BAA-29D169966B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714B7BFE-C07E-4F86-9BAA-29D169966B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714B7BFE-C07E-4F86-9BAA-29D169966B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{714B7BFE-C07E-4F86-9BAA-29D169966B7E} = {91D251C6-9440-4AD2-AC49-A7FCD9981F47}
+		{A5ABA4F7-CB6C-45CD-BA9A-75435C7A266A} = {918A81A2-F4EA-470C-8B18-21643875E4C4}
+	EndGlobalSection
+EndGlobal
