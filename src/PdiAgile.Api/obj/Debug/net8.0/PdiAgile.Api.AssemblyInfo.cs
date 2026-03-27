@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PdiAgile.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b5b13a605e1a4993317773b37f8a701e4a53ccf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc328511d7a2a43ea89a505f4f1e6fba8218e961")]
 [assembly: System.Reflection.AssemblyProductAttribute("PdiAgile.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PdiAgile.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

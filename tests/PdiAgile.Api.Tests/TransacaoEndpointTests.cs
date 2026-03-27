@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
 using Microsoft.AspNetCore.Mvc.Testing;
+using PdiAgile.Api.Models;
 using Xunit;
 
 namespace PdiAgile.Api.Tests;
@@ -18,6 +19,7 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveRetornar201_SemCorpo_QuandoValida()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{\"valor\": 123.45, \"dataHora\": \"2020-08-07T12:34:56.789-03:00\"}", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
@@ -29,6 +31,7 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveRetornar422_SemCorpo_QuandoValorNegativo()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{\"valor\": -1, \"dataHora\": \"2020-08-07T12:34:56.789-03:00\"}", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
@@ -40,6 +43,7 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveRetornar422_SemCorpo_QuandoFuturo()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{\"valor\": 10, \"dataHora\": \"2099-01-01T00:00:00.000-03:00\"}", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
@@ -51,6 +55,7 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveRetornar400_SemCorpo_QuandoCamposAusentes()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{}", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
@@ -62,6 +67,7 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveRetornar400_SemCorpo_QuandoJsonInvalido()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{invalid", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
@@ -73,9 +79,17 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     [Fact]
     public async Task PostTransacao_DeveFalhar415_QuandoNaoJson()
     {
+        Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{\"valor\":1,\"dataHora\":\"2020-01-01T00:00:00.000Z\"}", Encoding.UTF8, "text/plain");
         var response = await client.PostAsync("/transacao", content);
         Assert.Equal(HttpStatusCode.UnsupportedMediaType, response.StatusCode);
+    }
+
+    private static void Clear(System.Collections.Concurrent.ConcurrentBag<Transaction> bag)
+    {
+        while (bag.TryTake(out _))
+        {
+        }
     }
 }

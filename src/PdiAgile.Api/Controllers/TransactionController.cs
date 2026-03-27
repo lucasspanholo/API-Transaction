@@ -1,4 +1,3 @@
-using System.Collections.Concurrent;
 using Microsoft.AspNetCore.Mvc;
 using PdiAgile.Api.Models;
 using PdiAgile.Api.Requests;
@@ -10,7 +9,6 @@ namespace PdiAgile.Api.Controllers;
 [Route("transacao")]
 public class TransactionController : ControllerBase
 {
-    private static readonly ConcurrentBag<PdiAgile.Api.Models.Transaction> Store = new();
     private readonly ILogger<TransactionController> _logger;
 
     public TransactionController(ILogger<TransactionController> logger)
@@ -41,7 +39,7 @@ public class TransactionController : ControllerBase
             return UnprocessableEntity();
         }
 
-        Store.Add(new PdiAgile.Api.Models.Transaction { Value = request.Value.Value, DateTime = request.DateTime.Value });
+        TransactionStore.Store.Add(new PdiAgile.Api.Models.Transaction { Value = request.Value.Value, DateTime = request.DateTime.Value });
         _logger.LogInformation("Accepted transaction: value={Value} dateTime={DateTime}", request.Value.Value, request.DateTime.Value);
         return StatusCode(StatusCodes.Status201Created);
     }
