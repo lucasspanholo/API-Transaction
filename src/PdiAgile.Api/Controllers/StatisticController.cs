@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using PdiAgile.Api.Models;
-using PdiAgile.Api.Requests;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace PdiAgile.Api.Controllers;
@@ -35,8 +34,8 @@ public class StatisticController : ControllerBase
         {
             return Ok(new Statistics
             {
-                Average = 0,
                 Sum = 0,
+                Avg = 0,
                 Min = 0,
                 Max = 0,
                 Count = 0
@@ -46,12 +45,13 @@ public class StatisticController : ControllerBase
         var values = transactions.Select(t => t.Value).ToList();
         var statistics = new Statistics
         {
-            Average = values.Average(),
             Sum = values.Sum(),
+            Avg = values.Average(),
             Min = values.Min(),
             Max = values.Max(),
             Count = transactions.Count
         };
+        _logger.LogInformation($"Statistics: {statistics}");
         return Ok(statistics);
     }
 }

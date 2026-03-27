@@ -12,3 +12,13 @@ public static class TransactionStore
 {
     public static ConcurrentBag<Transaction> Store { get; } = new();
 }
+
+public static class ConcurrentBagExtensions
+{
+    public static void Clear<T>(this ConcurrentBag<T> bag)
+    {
+        while (bag.TryTake(out _))
+        {
+        }
+    }
+}

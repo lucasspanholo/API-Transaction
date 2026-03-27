@@ -31,7 +31,7 @@ public class EstatisticaEndpointTests : IClassFixture<WebApplicationFactory<Prog
         var root = await ReadJsonRoot(response);
         Assert.Equal(1, GetProperty(root, "count", "Count").GetInt32());
         Assert.Equal(20m, GetProperty(root, "sum", "Sum").GetDecimal());
-        Assert.Equal(20m, GetProperty(root, "average", "Average").GetDecimal());
+        Assert.Equal(20m, GetProperty(root, "avg", "Avg").GetDecimal());
         Assert.Equal(20m, GetProperty(root, "min", "Min").GetDecimal());
         Assert.Equal(20m, GetProperty(root, "max", "Max").GetDecimal());
     }

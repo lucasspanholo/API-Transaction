@@ -53,13 +53,13 @@ public class TransacaoEndpointTests : IClassFixture<WebApplicationFactory<Progra
     }
 
     [Fact]
-    public async Task PostTransacao_DeveRetornar400_SemCorpo_QuandoCamposAusentes()
+    public async Task PostTransacao_DeveRetornar422_SemCorpo_QuandoCamposAusentes()
     {
         Clear(TransactionStore.Store);
         var client = _factory.CreateClient();
         var content = new StringContent("{}", Encoding.UTF8, "application/json");
         var response = await client.PostAsync("/transacao", content);
-        Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+        Assert.Equal((HttpStatusCode)422, response.StatusCode);
         var body = await response.Content.ReadAsStringAsync();
         Assert.True(string.IsNullOrEmpty(body));
     }
